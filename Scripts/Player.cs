@@ -14,11 +14,13 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     public Animator animator;
 
+    public SpriteRenderer characterSR;
+
     public Vector3 moveInput;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -51,9 +53,9 @@ public class Player : MonoBehaviour
         if (moveInput.x != 0)
         {
             if (moveInput.x > 0)
-                transform.localScale = new Vector3(1, 1, 0);
+                characterSR.transform.localScale = new Vector3(1, 1, 0);
             else
-                transform.localScale = new Vector3(-1, 1, 0);
+                characterSR.transform.localScale = new Vector3(-1, 1, 0);
         }
 
 
