@@ -11,6 +11,8 @@ public class SpawnerManager : MonoBehaviour
 
     public GameObject[] enemies;
 
+    public WeaponManager weaponManager;
+
     public List<Spawner> spawners;
 
     private Player player;
@@ -53,7 +55,9 @@ public class SpawnerManager : MonoBehaviour
     {
         if (timeBtwSpawn <= 0)
         {
-            int randEnemyCount = UnityEngine.Random.Range(maxEnemy - 2, maxEnemy);
+            int randEnemyCount = UnityEngine.Random.Range(2, maxEnemy);
+            if (weaponManager.Enemies.Count <= 5)
+                randEnemyCount = UnityEngine.Random.Range(maxEnemy - 2, maxEnemy);
 
             List<int> randomIndex = GetRandomIndices(maxEnemy, randEnemyCount);
 
@@ -65,7 +69,7 @@ public class SpawnerManager : MonoBehaviour
             timeBtwSpawn = startTimeBtwSpawn;
 
             roundCount++;
-            if (roundCount > 5)
+            if (roundCount > 10)
             {
                 roundCount = 0;
                 maxEnemy = Mathf.Max(spawners.Count, maxEnemy + 1);

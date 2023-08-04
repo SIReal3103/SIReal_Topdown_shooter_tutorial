@@ -9282,6 +9282,7 @@ MonoBehaviour:
   - {fileID: 1926085311155766288, guid: bc181db4cb4e04d88afe0fe4b6a48bd5, type: 3}
   - {fileID: 1926085311155766288, guid: 55534d12d6ce548699a14baf37917cae, type: 3}
   - {fileID: 1926085311155766288, guid: 1d5312fde27424a4c8852f2d9e25c32e, type: 3}
+  weaponManager: {fileID: 1199280083}
   spawners:
   - {fileID: 37602828}
   - {fileID: 657008016}
