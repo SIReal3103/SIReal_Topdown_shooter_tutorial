@@ -53,7 +53,7 @@ public class SpawnerManager : MonoBehaviour
     {
         if (timeBtwSpawn <= 0)
         {
-            int randEnemyCount = UnityEngine.Random.Range(2, maxEnemy);
+            int randEnemyCount = UnityEngine.Random.Range(maxEnemy - 2, maxEnemy);
 
             List<int> randomIndex = GetRandomIndices(maxEnemy, randEnemyCount);
 
@@ -65,7 +65,7 @@ public class SpawnerManager : MonoBehaviour
             timeBtwSpawn = startTimeBtwSpawn;
 
             roundCount++;
-            if (roundCount > 30)
+            if (roundCount > 5)
             {
                 roundCount = 0;
                 maxEnemy = Mathf.Max(spawners.Count, maxEnemy + 1);

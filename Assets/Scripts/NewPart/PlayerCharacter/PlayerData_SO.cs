@@ -1,4 +1,3 @@
-using UnityEditor.U2D.Animation;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Character", menuName = "Character/CharacterData")]

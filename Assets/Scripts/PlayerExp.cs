@@ -7,7 +7,7 @@ public class PlayerExp : MonoBehaviour
     public HealthBar ExpBar;
     int currentExp = 0;
     int currentLevel = 1;
-    int requireExp = 20;
+    int requireExp = 30;
 
     public GameObject levelUpPanel;
 
