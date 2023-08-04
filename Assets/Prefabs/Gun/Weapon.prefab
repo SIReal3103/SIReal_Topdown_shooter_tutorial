@@ -82,7 +82,7 @@ MonoBehaviour:
   muzzle: {fileID: 5874567652542707260, guid: 4cddeea29ee8f4675b5af572c76d3215, type: 3}
   spawnPos:
   - {fileID: 7838341526656872603}
-  startTimeBtwShots: 0.15
+  startTimeBtwShots: 0.25
   bulletForce: 9
   minDamage: 3
   maxDamage: 8

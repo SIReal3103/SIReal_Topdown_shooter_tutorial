@@ -232,7 +232,7 @@ MonoBehaviour:
   - {fileID: 2640226331613661253}
   - {fileID: 2640226331207217027}
   - {fileID: 2640226332229081680}
-  startTimeBtwShots: 0.5
+  startTimeBtwShots: 0.65
   bulletForce: 9
   minDamage: 6
   maxDamage: 16
