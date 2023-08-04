@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
+    // New Part Level up Weapon
+    public List<Transform> weaponSlots = new List<Transform>();
+    int currentWeaponSlot = 0;
+
+    public void AddWeapon(GameObject weaponPrefab)
+    {
+        if (currentWeaponSlot < weaponSlots.Count)
+        {
+            Instantiate(weaponPrefab, weaponSlots[currentWeaponSlot]);
+            currentWeaponSlot++;
+        }
+    }
+    ///
+
+
     public List<Transform> Enemies = new List<Transform>();
 
     public void AddEnemyToFireRange(Transform transform)

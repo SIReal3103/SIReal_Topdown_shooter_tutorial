@@ -276,10 +276,11 @@ namespace SlimUI.ModernMenu{
 				loadingBar.value = progress;
 
 				if (operation.progress >= 0.9f && waitForInput){
-					loadPromptText.text = "Press " + userPromptKey.ToString().ToUpper() + " to continue";
+					//loadPromptText.text = "Press " + userPromptKey.ToString().ToUpper() + " to continue";
 					loadingBar.value = 1;
 
-					if (Input.GetKeyDown(userPromptKey)){
+					if (Input.anyKeyDown)
+                    {
 						operation.allowSceneActivation = true;
 					}
                 }else if(operation.progress >= 0.9f && !waitForInput){

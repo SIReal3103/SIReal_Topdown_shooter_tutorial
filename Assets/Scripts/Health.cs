@@ -38,6 +38,7 @@ public class Health : MonoBehaviour
                 {
                     FindObjectOfType<WeaponManager>().RemoveEnemyToFireRange(this.transform);
                     FindObjectOfType<Killed>().UpdateKilled();
+                    FindObjectOfType<PlayerExp>().UpdateExperience(UnityEngine.Random.Range(1, 4));
                     Destroy(this.gameObject, 0.125f);
                 }
                 isDead = true;

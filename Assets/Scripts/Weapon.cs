@@ -31,6 +31,11 @@ public class Weapon : MonoBehaviour
     //    else transform.localScale = new Vector3(1, 1, 0);
     //}
 
+    private void Start()
+    {
+        weaponManager = FindObjectOfType<WeaponManager>();
+    }
+
     private void Update()
     {
         //UPDATE

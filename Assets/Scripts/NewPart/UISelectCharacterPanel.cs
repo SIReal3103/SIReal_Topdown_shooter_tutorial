@@ -54,6 +54,11 @@ public class UISelectCharacterPanel : MonoBehaviour
         SelectCharacter(0);
     }
 
+    public void SelectMode(int index)
+    {
+        PlayerPrefs.SetInt("gameMode", index);
+    }
+
     public void SelectCharacter(int index)
     {
         Debug.Log(Characters[index].transform.position);
