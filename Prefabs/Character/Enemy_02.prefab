@@ -117,6 +117,9 @@ GameObject:
   - component: {fileID: 5142561942262912744}
   - component: {fileID: 7790193117817700024}
   - component: {fileID: 7790193117817700025}
+  - component: {fileID: 782446745877238651}
+  - component: {fileID: 1127526015238205934}
+  - component: {fileID: 497354296723534153}
   m_Layer: 0
   m_Name: Enemy_02
   m_TagString: Enemy
@@ -169,7 +172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roaming: 0
-  moveSpeed: 3.5
+  maxWidthFromPlayer: 0
+  maxHeightFromPlayer: 0
+  moveSpeed: 4
   nextWPDistance: 0.3
   seeker: {fileID: 7790193117817700025}
   updateContinuesPath: 1
@@ -178,6 +183,8 @@ MonoBehaviour:
   bulletSpeed: 0
   timeBtwFire: 0
   characterSR: {fileID: 6984291494320658494}
+  minDamage: 2
+  maxDamage: 4
 --- !u!114 &7790193117817700025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,3 +213,49 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &782446745877238651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5142561942262912751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a205bcf744e2534aafab0c8f3792030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damPopUp: {fileID: 3890343362428162250, guid: 18f905ec1f84df3469f9cbe60cc666a1, type: 3}
+--- !u!114 &1127526015238205934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5142561942262912751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959d37606be3add4e9914c546964113d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 30
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  safeTimeDuration: 0
+  isDead: 0
+  camShake: 0
+--- !u!114 &497354296723534153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5142561942262912751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426e9b44db2ab804a857a1756ec071e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 3ea83c257fc46e6408a5d76333b0f289, type: 2}
+  duration: 0.125
+  spriteRenderer: {fileID: 6984291494320658494}

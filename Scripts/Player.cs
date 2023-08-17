@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -59,6 +60,8 @@ public class Player : MonoBehaviour
         }
     }
 
+    // Video 11
+
     void StopDashEffect()
     {
         if (dashEffectCoroutine != null) StopCoroutine(dashEffectCoroutine);
@@ -82,4 +85,32 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(ghostDelaySeconds);
         }
     }
+
+    // Video 12
+    //public Health PlayerHealth;
+    //public GameObject damPopUp;
+    //public LosePanel losePanel;
+    //public void TakeDamage(int damage)
+    //{
+    //    if (damPopUp != null)
+    //    {
+    //        GameObject instance = Instantiate(damPopUp, transform.position
+    //                + new Vector3(UnityEngine.Random.Range(-0.3f, 0.3f), 0.5f, 0), Quaternion.identity);
+    //        instance.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
+    //        Animator animator = instance.GetComponentInChildren<Animator>();
+    //        animator.Play("red");
+    //    }
+
+    //    Debug.Log("player take damage" + damage);
+    //    PlayerHealth.TakeDam(damage);
+
+    //    if (PlayerHealth.isDead && losePanel != null)
+    //    {
+    //        losePanel.Show();
+    //    }
+    //}
+
+
+    // Video 12
+
 }

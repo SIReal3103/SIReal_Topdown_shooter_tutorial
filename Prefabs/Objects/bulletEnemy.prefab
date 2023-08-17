@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2986599266161477608}
   - component: {fileID: 2986599266161477607}
   - component: {fileID: 696034509360756926}
+  - component: {fileID: 5959200037355368355}
   m_Layer: 0
   m_Name: bulletEnemy
   m_TagString: Untagged
@@ -137,3 +138,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Time: 2
+--- !u!114 &5959200037355368355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4677656360125070615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b1ea297ce58b84fb1a962ba6e0a45c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDamage: 4
+  maxDamage: 7
+  goodSideBullet: 0
